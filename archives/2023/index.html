@@ -35,52 +35,44 @@
 	</header>
 
 	<main>
+		<h1>Archive</h1>
+
+
+
+
+
+<ul class="archive">
+	
+	
+		<li class="archive__year archive__expendable ">
+			<span>2023</span>
+			<ul>
+				
+					<li class="archive__month archive__expendable">
+						<span>October</span>
+						<ul>
+							
+								<li class="archive__entry"><a href="/2023/10/28/index/">Lingkai Hu</a></li>
+							
+						</ul>
+					</li>
+
+				
+			</ul>
+		</li>
 		
-
-
-
-	<article>
 	
-		<h1><a href="/2023/10/28/index/">Lingkai Hu</a></h1>
-	
-	<div class="article__infos">
-		<span class="article__date">2023-10-28</span><br />
-		
-		
-	</div>
-
-	
-
-	
-		<h5>Nice to meet you! Thank you for contacting Me!</h5>
-
-<h2 id="About-Me"><a href="#About-Me" class="headerlink" title="About Me"></a>About Me</h2><div style="text-align: center;">
-<figure class="figure"><img src="images/123.jpg" width="10%" height="10%" style="float: left; margin-right: 20px;"></figure>
-</div>
-
-<ul>
-<li>Education: Guangzhou University</li>
-<li>Major: Mechanical Engineering (ME)</li>
-<li>Major Research Direction: Deep learning algorithm, Natural Language Processing, Large Language Models, Computer Vision, Industrial Defect Detection, Digital Signal Processing, Few-Shot Learning</li>
-</ul>
-<h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h2><ul>
-<li>Email：<a href="mailto:&#x32;&#x31;&#49;&#x32;&#49;&#x30;&#55;&#x30;&#x36;&#48;&#64;&#101;&#46;&#103;&#x7a;&#104;&#x75;&#x2e;&#101;&#x64;&#117;&#x2e;&#99;&#x6e;">&#x32;&#x31;&#49;&#x32;&#49;&#x30;&#55;&#x30;&#x36;&#48;&#64;&#101;&#46;&#103;&#x7a;&#104;&#x75;&#x2e;&#101;&#x64;&#117;&#x2e;&#99;&#x6e;</a></li>
-<li>Wechat：hulingkaipray</li>
 </ul>
 
-	
-
-	
-
-</article>
-
-
-
-
-
-
-	<span class="different-posts">📕 end of posts 📕</span>
-
+<script>
+	const expandables = document.querySelectorAll('.archive__expendable')
+	for(let i = 0; i < expandables.length; i++) {
+		expandables[i].addEventListener('click', (e) => {
+			e.stopPropagation()
+			expandables[i].classList.toggle('archive__expendable_collapsed')
+		})
+	}
+</script>
 
 	</main>
 
